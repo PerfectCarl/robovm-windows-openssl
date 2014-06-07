@@ -33,11 +33,6 @@ C:\Apps\Mingw\msys\1.0\msys.bat
 cd /YOUR PATH
 export PATH=/C/Apps/Mingw/bin:$PATH
 
-patch -p1 -i channelid.patch
-patch -p1 -i alpn.patch
-patch -p1 -i jsse.patch
-patch -p1 -i handshake_cutthrough.patch
-
 ./Configure --prefix=$PWD/dist no-idea no-mdc2 no-rc5 shared mingw
 make depend && make && make install
 ```
@@ -47,11 +42,6 @@ make depend && make && make install
 C:\Apps\Mingw\msys\1.0\msys.bat
 cd /YOUR PATH
 export PATH=/C/Apps/Mingw/bin:$PATH
-
-patch -p1 -i channelid.patch
-patch -p1 -i alpn.patch
-patch -p1 -i jsse.patch
-patch -p1 -i handshake_cutthrough.patch
 
 ./Configure --prefix=$PWD/dist no-idea no-mdc2 no-rc5 no-shared mingw
 make depend && make && make install
