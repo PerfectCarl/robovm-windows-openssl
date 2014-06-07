@@ -18,7 +18,7 @@ patch -p1 -i handshake_cutthrough.patch
 ```
 
 # Binaries
-Precompiled 32bits static version [is available]().
+Precompiled 32bits static version [is available](https://github.com/PerfectCarl/robovm-windows-binaries/tree/master/dependencies/windows/openssl/no-shared).
 
 # How to build
 ## Prerequisites
